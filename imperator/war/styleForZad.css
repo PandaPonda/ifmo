@@ -1,0 +1,62 @@
+@CHARSET "UTF-8";
+body {
+	background-image: url(fon01.jpg);
+	padding: 5%;
+	text-align: center;
+	color:#bbb;
+	font-family: 'open sans';
+	position: relative;
+	margin: 0;
+	height: 100%;
+}
+#map-canvas {
+	width:100%;
+	height:75%;
+	text-align:center;
+	
+}
+a.knopka {
+  display: inline-block;
+  color: #ddd;
+  width: 20%;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: 1px 8px;
+  outline: none;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
+} 
+a.knopka:hover { background: rgba(255,255,255,.2); }
+a.knopka:active { background: white; }
+
+@CHARSET "UTF-8";
+   .block1 { 
+    width: 360px; 
+    background: #00CED1;
+    padding: 5px;
+    padding-left: 20px; 
+    border: solid 1px #000080; 
+   }
+  .block2 { 
+    width: 360px; 
+    background: #00CED1;
+    padding: 5px;
+    padding-left: 20px; 
+    border: solid 1px #000080; 
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+   }
+  .otv { 
+    width: 320px; 
+    background: #ffffff;
+    border: solid 3px #4682B4; 
+    font-weight: bold;
+    color: #fc0ab1;
+    text-decoration: blink;
+    text-align: center;
+    overflow: hidden;
+   }
+   

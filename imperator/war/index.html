@@ -7,21 +7,43 @@
 <!-- but may lead to some differences in layout.   -->
 
 <html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>Hello App Engine</title>
-  </head>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="/style.css">
+<link rel="stylesheet" type="text/css" href="/simpletextrotator.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+<script src="jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="jquery.flipping_text.js"></script>
+<script type="text/javascript" src="jquery.simple-text-rotator.js"></script>
+<title>HW</title>
 
-  <body>
-    <h1>Hello App Engine!</h1>
-	
-    <table>
-      <tr>
-        <td colspan="2" style="font-weight:bold;">Available Servlets:</td>        
-      </tr>
-      <tr>
-        <td><a href="imperator">Imperator</a></td>
-      </tr>
-    </table>
-  </body>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".intro").flipping_text({
+			tickerTime : 100,
+			tickerCount : 5,
+			customRandomChar : "!@#$%^&*"
+		});
+		$(".rotate").textrotator({
+			animation : "dissolve",
+			speed : 4000
+		});
+	});
+</script>
+</head>
+<body>
+ 	<div class="wrapper">
+	<h1 class="intro">Welcome!</h1>
+	<p class="info">Вершинин Дмитрий, группа 3157</a></p>
+	<div class="main">
+	<p class="pointer">look at this:</p>
+	<h1><a href="/map.html" class="knopka" id="knop"><span class="rotate">первое задание, карта google</span></a></h1>
+	<h1><a href="/zad3.html" class="knopka" id="knop2"><span class="rotate">второе задание, уравнения и массивы</span></a></h1> 
+	<h1><a href="/zad4.html" class="knopka" id="knop3"><span class="rotate">третье задания, символы unicode</span></a></h1>
+	<h1><a href="/clazz.html" class="knopka" id="knop4"><span class="rotate">четвёртое задание, классы</span></a></h1>
+	</div>
+	<p class="credit">Powered by Versh</a></p>
+	</div>
+</body>
 </html>
