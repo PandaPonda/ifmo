@@ -3,9 +3,112 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="/styleForZad.css">
+<script src="jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+function one(m_param){
+	  m_param = parseInt(m_param);
+	  for (var i = 1, e; e = document.getElementById('one' + i); ++i)
+	        e.style.display = i === m_param ? '' : 'none';
+	}
+</script>
+<script>
+    $(document).ready(function() {
+    	$('#estser').on('click',function(){
+    		$('#rez').load( '/clazz?sh='+$('#ship').val()+'&pr='+$('#pric').val());
+    	});
+    }
+    		); 
+    $(document).ready(function() {
+    	$('#estser1').on('click',function(){
+    		$('#rez').load( '/clazz?sh='+$('#ship').val()+'&pr1='+$('#pric1').val());
+    	});
+    }
+    		); 
+    $(document).ready(function() {
+    	$('#estser2').on('click',function(){
+    		$('#rez').load( '/clazz?sh='+$('#ship').val()+'&pr2='+$('#pric2').val());
+    	});
+    }
+    		); 
+    $(document).ready(function() {
+    	$('#estser3').on('click',function(){
+    		$('#rez').load( '/clazz?sh='+$('#ship').val()+'&pr3='+$('#pric3').val());
+    	});
+    }
+    		); 
+</script>
+
 <title>Clazz</title>
 </head>
 <body>
-<h1><a href="/index.html" class="knopka">к заданиям</span></a></h1>
+			<h1>
+			<div class="all">
+  <p>Капитан, выберите свой корабль</p>
+  			</h1>
+  			<h2>
+   <select id="ship" onchange="one(this.value)">
+      <option>---</option> 
+      <option value="1">Тяжёлый крейсер</option>
+      <option value="2">Корабль дальней разведки</option>
+      <option value="3">Добытчик ценных пород</option> 
+      <option value="4">Пассажирский шатл</option>
+   </select>
+   <div id="one1" style="display:none">
+       <p>Великолепный выбор, серьёзное вооружение и энергетичесие щиты весомый агрумент в любом споре</br>
+       Ваши приказы:
+      <select id="pric">
+      <option>---</option> 
+      <option value="1">найти и атаковать крейсер</option>
+      <option value="2">найти и атаковать разведчик</option>
+      <option value="3">найти и атаковать горнодобывающее судно</option> 
+      <option value="4">найти и атаковать шатл</option>
+      <option value="5">использовать прыжковый двигатель</option>
+      <option value="6">активировать оружее класса "звёздный уничтожитель"</option>
+   </select>
+   </p>
+   <h2><a href=# class="knopka" id="estser">Выполнять!</a></h2>
+   </div> 
+   <div id="one2" style="display:none">
+       <p>Возможнось становиться невидимым и развивать большую скорость</br>
+       Ваши приказы:
+      <select id="pric1">
+      <option>---</option> 
+      <option value="7">найти и атаковать крейсер</option>
+      <option value="8">найти и атаковать разведчик</option>
+      <option value="9">найти и атаковать горнодобывающее судно</option> 
+      <option value="10">найти и атаковать шатл</option>
+      <option value="11">использовать прыжковый двигатель</option>
+      <option value="12">активировать невидимость</option>
+   </select>
+   </p>
+   <h2><a href=# class="knopka" id="estser1">Выполнять!</a></h2>
+   </div>
+   <div id="one3" style="display:none">
+       <p>Большой промышленный корабль</br>
+       Ваши приказы:
+      <select id="pric2">
+      <option>---</option> 
+      <option value="1">добывать руду</option>
+      <option value="2">зависнуть в космобаре</option>
+   </select>
+   </p>
+   <h2><a href=# class="knopka" id="estser2">Выполнять!</a></h2>
+   </div>
+   <div id="one4" style="display:none">
+       <p>
+       Маленький и унылый</br>
+       Ваши приказы:
+        <select id="pric3">
+      <option>---</option> 
+      <option value="1">устроить гонки</option>
+      <option value="2">зависнуть в космобаре</option>
+   		</select>
+  	 </p>
+  	 <h2><a href=# class="knopka" id="estser3">Выполнять!</a></h2>
+</div>
+			</h2>
+
+<div overflow="auto" auto><h3 id="rez"></h3></div>
+<h1><a href="/index.html" class="knopka">к заданиям</a></h1>
 </body>
 </html>

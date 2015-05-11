@@ -46,7 +46,7 @@ public class Zadanie4Servlet extends HttpServlet {
 		}
 		if (ch1 > 113021 || ch2 > 113021) {
 			resp.getWriter().println(
-					"эти символы ещё не разработанны" + "<br>"
+					"эти символы ещё не разработаны" + "<br>"
 							+ "ограничтесь числом 113021");
 			return;
 		}
@@ -82,7 +82,7 @@ public class Zadanie4Servlet extends HttpServlet {
 		}
 		if (ch1 > 113021 || ch2 > 113021) {
 			resp.getWriter().println(
-					"эти символы ещё не разработанны" + "<br>"
+					"эти символы ещё не разработаны" + "<br>"
 							+ "ограничтесь числом 113021");
 			return;
 		}

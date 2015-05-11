@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="/styleForZad.css">
+<link rel="stylesheet" type="text/css" href="/style.css">
+<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
 <title>zadanie3.1-3.4</title>
 </head>
 <script src="jquery-2.1.0.min.js"></script>
@@ -45,50 +46,39 @@ $('#knop6').on('click',function(){
 		); 
 </script>
   <body>
-  <div >
-    	<div class="block2"> Задание 3.1<br>Енот найдёт близжайшее к 10 число
-   		</div>
-   		<div class="block1">	
-    			<input type="text" value="первое число" style="width:120px" id="raki">
-    			<input type="text" value="второе число" style="width:120px" id="raki2">
+  <div class="wrapper">
+  <p class="info" style="margin: 3% 0 ">енот поможет посчитать</a></p>
+  <div>	
+    	<h3 >Задание 3.1<br>Енот найдёт близжайшее к 10 число:</h3> 
+
+    			<input type="text" placeholder="первое число" style="width:120px" id="raki">
+    			<input type="text" placeholder="второе число" style="width:120px" id="raki2">
     			<input type="button" value="Енот, считай!" id="knop">
-    			<hr width=100% size=1px >
     			<div class="otv" id="rez"> близжайшее </div>
    		</div>
- 		<div class="block1" style="background: #AFEEEE">	   
-    	</div> 
-    	<div class="block2"> Задание 3.2<br>Енот найдёт корни уравнения
-    	</div>   
-    	<div class="block1"> 
-    			<input type="text" value="a" style="width:78px" id="raki3">
-    			<input type="text" value="b" style="width:78px" id="raki4">
-    			<input type="text" value="c" style="width:78px" id="raki5">
+   		<div> 
+    	<h3 >Задание 3.2<br>Енот найдёт корни уравнения</h3>
+    			<input type="text" placeholder="a" style="width:78px" id="raki3">
+    			<input type="text" placeholder="b" style="width:78px" id="raki4">
+    			<input type="text" placeholder="c" style="width:78px" id="raki5">
     			<input type="button" value="Енот, считай!" id="knop2">
-    			<hr width=100% size=1px >
     			<div class="otv" id="rez2"> корни </div>	
     	</div>
-   	 	<div class="block1" style="background: #AFEEEE">	   
-    	</div> 
-    	<div class="block2" > Задание 3.3<br>Енот нарендомит массив
-    	</div>
-    	<div class="block1" > 
+    	<div> 
+    	<h3 style="color:#ddd"> Задание 3.3<br>Енот нарендомит массив</h3>
     			<input type="button" value="нарендомливание" id="knop3"  >
     			<input type="button" value="контрнарендомливание" id="knop4">
-    			<hr width=100% size=1px >
     			<div class="otv" id="rez3">  </div>	
     	</div>
-    	<div class="block1" style="background: #AFEEEE">	   
-    	</div>
-    	<div class="block2" > Задание 3.4<br>Енот нарендомит массив и найдёт максимальный элемент
-    	</div>
-    	<div class="block1" > 
+    	<div  > 
+    	<h3 style="color:#fff"> Задание 3.4<br>Енот нарендомит массив и найдёт максимальный элемент</h3>
     			<input type="button" value="нарендомливание" id="knop5"  >
     			<input type="button" value="контрнарендомливание" id="knop6">
-    			<hr width=100% size=1px >
     			<div class="otv" id="rez4">  </div>	
-    	</div>
+    			</div>
+    <h1><a href="/index.html" class="knopka" class="info" style="margin: 10% 0 ">к заданиям</span></a></h1>
     </div>
-    <h1><a href="/index.html" class="knopka">к заданиям</span></a></h1>
+    <p class="credit">Powered by Versh</a></p>
 </body>
 
 </html>

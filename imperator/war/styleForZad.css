@@ -60,3 +60,26 @@ a.knopka:active { background: white; }
     overflow: hidden;
    }
    
+   div.all{
+  width:100%;
+  margin-top:50px;
+  text-align:center;
+}
+   h2 {
+	color: #eee;
+	font-weight: 100;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+ h2 {
+	color: #eee;
+	font-weight: 100;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+ h3 {
+	color: #eee;
+	font-weight: 100;
+	margin-top: 0;
+	margin-bottom: 5px;
+}

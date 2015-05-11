@@ -20,4 +20,9 @@ public class Shuttlecraft {
 	public void setCallsign(String q) {
 		callsign = q;
 	}
+	
+	public int mesto(){
+		int mst=(int)(Math.random()*5+1);
+		return mst;
+	}
 }

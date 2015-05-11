@@ -3,6 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" type="text/css" href="/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
 	<script src="jquery-2.1.0.min.js"></script>
     <script>
 		$(document).ready(function(){
@@ -15,7 +16,7 @@
 	<script>
 		$(document).ready(function(){
 			$('#knop3').on('click',function(){
-				$('#otv2').load('/zadanie4?chis3='+$('#ch3').val()+'&chis4='+$('#ch4').val()+'&flag=2');
+				$('#otv1').load('/zadanie4?chis3='+$('#ch3').val()+'&chis4='+$('#ch4').val()+'&flag=2');
 			});
 	}
 		); 
@@ -27,45 +28,40 @@
 					$('#otv1').load('/zadanie4?flag=3');
 			});
 				$('#knop4').on('click',function(){
-					$('#otv2').load('/zadanie4?flag=4');
+					$('#otv1').load('/zadanie4?flag=4');
 			});						
 	}
 		); 
 	</script>
-    <title>UP</title> 
+    <title>unicode</title> 
   </head>
   <body>
-	<div class="osnov">	
-			<div class="top"></div>
-			<div class="zadanie">
-			<div>
+		<div class="wrapper">
+		<p class="info" style="margin: 3% 0 ">unicode символы</a></p>
 			<div >
 				<p class="tx" >Задайте диапазон вывода символов</p>
 				<p class="ptx" >(будут выведенны только символы)</p>
-				<hr width=100% size=1px >
 			</div>
 				<input type="text"  style="width:120px" id="ch1">
 				<input type="text"  style="width:120px" id="ch2">
-				<a href="#" class="knopka" id="knop">задать</a>
-				<a href="#" class="knopka" id="knop2">скрыть</a>
-			</div>
+				<a href="#" class="knopka" id="knop"  style="width: 10%">задать</a>
+				<a href="#" class="knopka" id="knop2" style="width: 10%">скрыть</a>
+			
 			<div style="padding-top:50px">
 				<p class="ptx" >(кроме символа будут выведены десятичные и <br>шестнадцатиричные формы представления)</p>
-				<hr width=100% size=1px >
 			</div>
 			<div>
 				<input type="text"  style="width:120px" id="ch3">
 				<input type="text"  style="width:120px" id="ch4">
-				<a href="#" class="knopka" id="knop3">задать</a>
-				<a href="#" class="knopka" id="knop4">скрыть</a>
+				<a href="#" class="knopka" id="knop3" style="width: 10%">задать</a>
+				<a href="#" class="knopka" id="knop4" style="width: 10%">скрыть</a>
 			</div>
-			</div> 
-			<div class="otvet" id="otv1">
+			<div>
+			<div class="otv1" > </div>
+			 <div class="otv1" id="otv1"> </div>
 			</div>
-			<div class="otvet" style="width: 40%" id="otv2">
-			</div>
-	 		
-   </div> 
-	<h1><a href="/index.html" class="knopka">к заданиям</span></a></h1>
+	<h1><a href="/index.html" class="knopka" style="margin: 10% 0 ">к заданиям</span></a></h1>
+	<p class="credit">Powered by Versh</a></p>
+	</div>
   </body>
 </html>

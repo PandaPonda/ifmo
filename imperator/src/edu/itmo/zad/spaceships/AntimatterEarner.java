@@ -7,6 +7,11 @@ public class AntimatterEarner {
 	public int capacity=32000;
 	public int hp=210000;
 	
+	public int maincraft() {
+		int copanie=(int) (Math.random()*5200);
+		return copanie;
+	}
+	
 	public String getName() {
 		return name;
 	}
@@ -21,3 +26,4 @@ public class AntimatterEarner {
 		callsign = q;
 	}
 }
+	
