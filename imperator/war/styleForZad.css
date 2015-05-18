@@ -1,6 +1,11 @@
 @CHARSET "UTF-8";
 body {
 	background-image: url(fon01.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color:#565656;
 	padding: 5%;
 	text-align: center;
 	color:#bbb;

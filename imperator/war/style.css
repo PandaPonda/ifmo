@@ -104,6 +104,7 @@ h2 {
 }
 a.knopka {
   display: inline-block;
+  border-radius: 8px;
   color: #bbb;
   width: 20%;
   font-weight: 700;
@@ -112,7 +113,6 @@ a.knopka {
   padding: 1px 8px;
   outline: none;
   border: 2px solid;
-  border-radius: 1px;
   transition: 0.2s;
 } 
 a.knopka:hover { background: rgba(255,255,255,.2); }
