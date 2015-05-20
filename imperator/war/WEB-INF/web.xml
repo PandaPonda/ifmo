@@ -20,6 +20,10 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>Clazz</servlet-name>
 		<servlet-class>edu.itmo.zad.spaceships.ClazzServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>Iskl</servlet-name>
+		<servlet-class>edu.itmo.zad.IsklServlet</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>Imperator</servlet-name>
 		<url-pattern>/imperator</url-pattern>
@@ -35,6 +39,10 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 	<servlet-mapping>
 	<servlet-name>Clazz</servlet-name>
 	<url-pattern>/clazz</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	<servlet-name>Iskl</servlet-name>
+	<url-pattern>/iskl</url-pattern>
 	</servlet-mapping>
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>

@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script src="jquery-2.1.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script>
+	$(document).ready(function(){
+	$('#knop').on('click',function(){
+		$('#rez').load('/iskl?action=check');
+			});
+}
+		); 
+</script>
+ <script>
+	$(document).ready(function(){
+	$('#knop2').on('click',function(){
+		$('#rez2').load('/iskl?action=ans&vopr='+$('#otv').val()+'&vopros='+$('#trash').val());
+			});
+}
+		); 
+</script>
+    <title>Game</title>
+  </head>
+  <body>
+    <div class="wrapper">
+    <h3>поиграй со мной</h3>
+    <a href="#" class="knopka" id="knop"  style="width: 10%">вопросы тут</a>
+    <div id="rez">
+    </div>
+    <div>
+     <h3>отвечай!</h3>
+     <input type="text" style="width:20%" id="otv">
+     <a href="#" class="knopka" id="knop2"  style="width: 7%">готово</a>
+    </div>
+    <div id="rez2">
+    </div>
+    <h1><a href="/index.html" class="knopka" class="info" style="margin: 10% 0 ">к заданиям</span></a></h1>
+    </div>
+    <p class="credit">Powered by Versh</a></p>
+  </body>
+</html>
