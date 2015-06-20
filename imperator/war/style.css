@@ -85,6 +85,12 @@ h2 {
 	width: 100%;
 }
 .credit a {
+	 
+	color:#D2691E;
+	margin: 10px;
+	text-decoration: none;
+}
+#key {
 	color:#D2691E;
 	margin: 10px;
 	text-decoration: none;
@@ -166,7 +172,22 @@ a.knopkaBack:active { background: white; }
   font-variant: normal;
   text-transform: none;
 }
-.icon-vk:before { content: '\e800'; } 
+.icon-vk:before { content: '\e803'; } 
 .icon-github-circled:before { content: '\e801'; } 
 .icon-gplus:before { content: '\e802'; } 
+.icon-key:before { content: '\e800'; } 
 
+#dann {
+	width: 90%;
+	margin: auto;
+	border: 0px;
+	background: rgba(12,12,12,.5);
+}
+
+#dann1 {
+	width: 40%;
+	margin: auto;
+	border: 0px;
+	background: rgba(12,12,12,.5);
+	text-align: center;
+}
