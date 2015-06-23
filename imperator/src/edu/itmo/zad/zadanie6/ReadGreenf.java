@@ -24,8 +24,8 @@ public class ReadGreenf extends HttpServlet {
 		String greenUrl = "http://localhost:8888/csv/greenf.csv";
 		String waterUrl = "http://localhost:8888/csv/waterf.csv";
 
-	//	String greenUrl = "http://silenceponda.appspot.com/csv/greenf.csv";
-	//	String waterUrl = "http://silenceponda.appspot.com/csv/waterf.csv";
+		//String greenUrl = "http://silenceponda.appspot.com/csv/greenf.csv";
+		//String waterUrl = "http://silenceponda.appspot.com/csv/waterf.csv";
 
 		ArrayList<Green> greenf = new ArrayList<Green>();
 		int i = 0;
@@ -103,9 +103,9 @@ public class ReadGreenf extends HttpServlet {
 			for (Green green : greenf) {
 				if (distr.equals(green.getDistrict())) {
 					resp.getWriter().println(
-							"<tr>" + "<td class=\"hot1\">"
-									+ green.getName() + "</td>" + "<td class=\"hot2\">"
-									+ green.getArea() + "</td>" + "<td class=\"hot3\">"
+							"<tr>" + "<td>"
+									+ green.getName() + "</td>" + "<td>"
+									+ green.getArea() + "</td>" + "<td>"
 									+ green.getFoundation() + "</td>" + "</tr>");
 			}
 		}
@@ -113,15 +113,35 @@ public class ReadGreenf extends HttpServlet {
 			.println( "</table><p> А также, район <b>" + distr
 					+ "</b> распологает следующим переченем водных объектов : </p>"
 					+ "<table id=\"dann1\"><tr><th>Наименование</th><th>Тип</th>");
+			int prud = 0;
+			String prudType = "пруд";
+			String rucheyTupe = "ручей";
+			String nameN = "б/н";
+			int ruchei = 0;
 			for (Water water : waterf) {
 				if (distr.equals(water.getDistrict())) {
+					if (water.getType().equals(prudType)&water.getName().equals(nameN)){ 
+					prud++;
+					}
+					else if(water.getType().equals(rucheyTupe)&water.getName().equals(nameN)){
+					ruchei++;	
+					}	
+					else {
 					resp.getWriter().println(
-							"<tr>" + "<td class=\"hot1\">"
-									+ water.getName() + "</td>" + "<td class=\"hot2\">"
+							"<tr>" + "<td>"
+									+ water.getName() + "</td>" + "<td>"
 									+ water.getType() + "</td>" + "</tr>");
 			}
+			}
 		}
-			resp.getWriter().println("</table></div>"
+			resp.getWriter().println("</table>");
+			if (prud!=0){
+			resp.getWriter().println(prud+" прудов(а) не имеющих имени<br>");
+			}
+			if (ruchei!=0){
+			resp.getWriter().println(ruchei+" ручейков(а) не имеющих имени<br>");	
+			}
+			resp.getWriter().println("</div>"
 			+ "<p class=\"credit\">follow me<a href=\"http://vk.com\" class=\"icon-vk\"></a> <a href=\"https://github.com/PandaPonda\" class=\"icon-github-circled\"></a> <a href=\"https://plus.google.com/u/0/100337247794451035450/posts\" class=\"icon-gplus\"></a></p>"
 			+ "</div>"
 			+ "</body>"
